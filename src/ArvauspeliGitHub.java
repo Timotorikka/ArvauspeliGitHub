@@ -9,21 +9,23 @@ public class ArvauspeliGitHub {
 		int arvaukset = 0;
 		String nimi;
 			
-			// Lisätään do while looppi, jolla pyydetään käyttäjää arvaamaan nimi ja toistetaan niin kauan kunnes arvaa oikein
+			// Lisätään do while looppi, jolla pyydetään käyttäjää arvaamaan nimi
+			// Toistetaan niin kauan kunnes arvaa nimen oikein "Pentti" tai syöttää "loppu"
 			do
 			{
 			System.out.println("Arvaa nimi");			
 			nimi = in.nextLine();
 			arvaukset++;
-			
+				
+				// If lauseke joka tarkistaa oliko arvaus "Pentti"
 				if(nimi.equals("Pentti"))
 				System.out.println("Arvasit oikein, paljon onnea!");
 			
 			
-			
-			} while (!nimi.equals("Pentti"));
+			  // Do While loopin loppu
+			} while (!nimi.equals("Pentti") && !nimi.equals("loppu"));
 			  
-			  // Lisätään loppuun montako kertaa käyttäjä arvasi
+			  // Lisätään koodin loppuun montako kertaa käyttäjä arvasi
 			  System.out.println("Arvasit " + arvaukset + " kertaa.");
 			  
 	} // Mainin loppu
