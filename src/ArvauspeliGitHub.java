@@ -13,13 +13,19 @@ public class ArvauspeliGitHub {
 			do
 			{
 			System.out.println("Arvaa nimi");			
-			nimi = in.nextLine();			
-			if(nimi.equals("Pentti"))
+			nimi = in.nextLine();
+			arvaukset++;
+			
+				if(nimi.equals("Pentti"))
 				System.out.println("Arvasit oikein, paljon onnea!");
 			
 			
+			
 			} while (!nimi.equals("Pentti"));
-
+			  
+			  // Lisätään loppuun montako kertaa käyttäjä arvasi
+			  System.out.println("Arvasit " + arvaukset + " kertaa.");
+			  
 	} // Mainin loppu
 
 }
