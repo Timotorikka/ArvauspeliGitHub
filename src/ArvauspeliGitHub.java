@@ -15,7 +15,10 @@ public class ArvauspeliGitHub {
 			{
 			System.out.println("Arvaa nimi");			
 			nimi = in.nextLine();
-			arvaukset++;
+			
+				// If lauseke joka tarkistaa oliko nimi "loppu" ja silloin ei lisää arvauskertojen määrää
+				if (!nimi.equals("loppu"))
+					arvaukset++;
 				
 				// If lauseke joka tarkistaa oliko arvaus "Pentti"
 				if(nimi.equals("Pentti"))
